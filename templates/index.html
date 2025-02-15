@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor YouTube</title>
+    <link rel="stylesheet" href="../static/index.css">
+</head>
+<body>
+    <h1>Descargador de vídeos de YouTube</h1>
+    <div class="container">
+        <form action="/download" method="POST">
+            <input id="urlInput" type="text" name="url" placeholder="Introduce la URL del vídeo aquí.">
+            <button id="submitBtn" type="submit" disabled>Descargar</button>
+        </form>
+    </div>
+    <p id="message" class="hidden">Esa no es una URL de vídeo de YouTube válida.</p>
+
+    <script src="../static/index.js"></script>
+</body>
+</html>
